@@ -27,7 +27,7 @@ public final class TransactionService extends RouteBuilder {
                 + consumerMaxPollRecords + "&seekTo=" + "beginning"
                 + "&groupId=" + "task")
                 .setHeader(Exchange.HTTP_METHOD, constant("POST"))
-                .setHeader("Authorization",constant("Basic ZWxhc3RpYzo5bTFOSUI4MXdVNzlmMTdhaVp3S3AxNGU="))
+                .setHeader("Authorization",constant("Basic XXXX"))
                 .setHeader("Content-Type",constant("application/json"))
                 .to("https://elasticsearch-sample-es-http:9200/audit/audit")
                 .log("${body}");
